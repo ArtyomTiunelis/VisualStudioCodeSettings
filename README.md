@@ -20,7 +20,7 @@ A version-controlled backup of my personal Visual Studio Code user profile (sett
 | `snippets/` | User snippets (language-specific or global). |
 
 ---
-## ✅ What You Typically Want to Track
+## ✅ What is tracked
 
 Things to keep:
 - `settings.json`
@@ -41,7 +41,7 @@ Excluded by the current `.gitignore`:
 - Most of `.vscode/` except the core JSON config files (pattern allows `settings.json`, `tasks.json`, `launch.json`, `extensions.json` if such a folder ever appears here)
 
 ---
-## Quick Environment Rebuild (Fresh Machine)
+## Fresh Environment Rebuild
 
 1. Install VS Code from https://code.visualstudio.com/
 2. Clone this repository:
@@ -63,7 +63,7 @@ Excluded by the current `.gitignore`:
 4. Restart VS Code.
 
 ---
-## 🪄 Alternative: Symlink Strategy
+## Alternative: Symlink Strategy
 Instead of cloning directly into the live settings folder, you can keep the repo elsewhere and symlink the `User` directory.
 
 - Windows (PowerShell, run as Administrator if needed):
@@ -141,15 +141,6 @@ Add new snippet files under `snippets/`. File naming convention:
 - `global.code-snippets` for global
 
 ---
-## 🧰 Optional Automation
-Add a simple setup script (future enhancement):
-```
-setup.ps1   # Clones repo, installs extensions
-setup.sh    # *nix equivalent
-```
-Add a GitHub Action to validate `vscode_extenstions.txt` formatting.
-
----
 ## 🧷 Useful Paths (Reference)
 | OS | Path |
 |----|------|
@@ -164,3 +155,11 @@ Add a GitHub Action to validate `vscode_extenstions.txt` formatting.
 - Categorize extensions file with sections
 - Cull large ephemeral folders or ignore them
 - Add export script to auto-commit weekly diffs
+
+### 🧰 Optional Automation
+Add a simple setup script (future enhancement):
+```
+setup.ps1   # Clones repo, installs extensions
+setup.sh    # *nix equivalent
+```
+Add a GitHub Action to validate `vscode_extenstions.txt` formatting.
