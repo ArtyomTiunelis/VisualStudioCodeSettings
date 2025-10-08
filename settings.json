@@ -1,0 +1,181 @@
+{
+    "workbench.colorTheme": "Rosé Pine",
+    "git.openRepositoryInParentFolders": "never",
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "search.mode": "newEditor",
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.normal": "block",
+    "vim.easymotionDimBackground": false,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "<C-p>"
+            ],
+            "commands": [
+                "editor.action.triggerParameterHints"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "F"
+            ],
+            "commands": [
+                "workbench.action.findInFiles"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "q"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<S-l>"
+            ],
+            "commands": [
+                "workbench.action.nextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                "workbench.action.previousEditor"
+            ]
+    },
+    {
+        "before": [
+            "<leader>",
+            "b"
+        ],
+        "commands": [
+            "workbench.action.showAllEditors"
+        ]
+    },
+    {
+        "before": [
+            "<leader>",
+            "o"
+        ],
+        "commands": [
+            "workbench.action.quickOpen"
+        ]
+    },
+    {
+        "before": [
+            "<leader>",
+            "t",
+            "a"
+            ],
+            "commands": [
+                "workbench.action.toggleActivityBarVisibility"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "t"
+            ],
+            "commands": [
+                "workbench.action.toggleSidebarVisibility"
+            ]
+        },
+        // Go to Definition
+        {
+            "before": [
+                "g",
+                "d"
+            ],
+            "commands": [
+                "editor.action.revealDefinition"
+            ]
+        },
+        // Go to Type Definition
+        {
+            "before": [
+                "g",
+                "t"
+            ],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        // Go to Implementation
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        // Find All References
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.goToReferences"
+            ]
+        },
+        {
+            "before": ["<leader>", "c", "a"],
+            "commands": [
+                "chatEditor.action.acceptHunk",
+                "inlineChat2.keep"
+            ]
+        },
+        // Reject the change block
+        {
+            "before": ["<leader>", "c", "x"],
+            "commands": [
+                "chatEditor.action.undoHunk",
+                "chatEditor.action.reject"
+            ]
+        },
+    ],
+    "vim.commandLineModeKeyBindings": [],
+    "mssql.connectionGroups": [
+        {
+            "name": "ROOT",
+            "id": "730D9075-F16C-4D51-BD38-D51C5C466A8F"
+        }
+    ],
+    "mssql.connections": [
+        {
+            "authenticationType": "Integrated",
+            "connectTimeout": 30,
+            "applicationName": "vscode-mssql",
+            "applicationIntent": "ReadWrite",
+            "profileName": "DEV3",
+            "server": "FINTECHDB01-DEV,50003",
+            "trustServerCertificate": true,
+            "groupId": "730D9075-F16C-4D51-BD38-D51C5C466A8F",
+            "id": "72BA7F69-C479-479A-AE0D-78F8BCDC6ECF",
+            "database": "",
+            "user": "",
+            "password": "",
+            "commandTimeout": 30,
+            "encrypt": "Mandatory",
+            "profileSource": 0
+        }
+    ],
+    "[sql]": {
+        "editor.defaultFormatter": "ms-mssql.mssql"
+    },
+    "sqltools.highlightQuery": false,
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "hidden"
+}

@@ -1,0 +1,101 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+b",
+        "command": "-workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "editor.action.inlineSuggest.commit",
+        "when": "editorTextFocus && inlineSuggestionVisible",
+        "args": {
+            "source": "copilot"
+        }
+    },
+    // --- Next Change Mappings ---
+    {
+        "key": "] c",
+        "command": "workbench.action.editor.nextChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
+    {
+        "key": "] c",
+        "command": "workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "] c",
+        "command": "chatEditor.action.navigateNext",
+        "when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused"
+    },
+
+    // --- Previous Change Mappings ---
+    {
+        "key": "[ c",
+        "command": "workbench.action.editor.previousChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
+    {
+        "key": "[ c",
+        "command": "workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "[ c",
+        "command": "chatEditor.action.navigatePrevious",
+        "when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-chatEditor.action.navigateNext",
+        "when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-chatEditor.action.navigatePrevious",
+        "when": "chatEdits.hasEditorModifications && chatIsEnabled && editorFocus || chatEdits.hasEditorModifications && chatIsEnabled && notebookCellListFocused"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.compareEditor.nextChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "alt+f5",
+        "command": "-workbench.action.editor.nextChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.compareEditor.previousChange",
+        "when": "textCompareEditorVisible"
+    },
+    {
+        "key": "shift+alt+f5",
+        "command": "-workbench.action.editor.previousChange",
+        "when": "editorTextFocus && !textCompareEditorActive && quickDiffDecorationCount != '0'"
+    },
+    {
+        "key": "ctrl+w ctrl+o",
+        "command": "workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+    },
+    {
+        "key": "ctrl+w o",
+        "command": "-workbench.action.toggleMaximizeEditorGroup",
+        "when": "editorPartMaximizedEditorGroup || editorPartMultipleEditorGroups"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.closePanel"
+    }
+]
