@@ -43,6 +43,9 @@ globalStorage/*
 History/*
 sync/*
 
+**/state.vscdb*
+**/storage.json
+
 # Vim
 *.swp
 *.swo
